@@ -1,0 +1,123 @@
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+
+    
+    background-color: #f4f4f4;
+    background-image: url("./fundo.jpg");
+    background-position-y: bottom;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+}
+
+header {
+    background-color: #2c3e50; /* Dark blue background */
+    color: #ecf0f1; /* Light text color */
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav.navbar {
+    background-color: #3498db; /* Blue background */
+}
+
+nav.navbar a.nav-link {
+    color: #ecf0f1; /* Light text color */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav.navbar a.nav-link:hover {
+    color: #ffffff; /* White text color on hover */
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 35px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Styles specific to the introduction section */
+section {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+ul {
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    bottom: 0;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Additional Styling for Example Images */
+#how-done img,
+#biochemical-exam img {
+    margin-top: 15px;
+}
+
+/* Example Image Styles */
+#results img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 600px) {
+    main {
+        padding: 15px;
+    }
+}
+
+
+
+#members {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#members > div {
+    flex: 0 0 48%; /* Define a largura desejada, ajuste conforme necessário */
+    margin: 1%; /* Adiciona uma margem entre os blocos */
+    box-sizing: border-box;
+    border: 1px solid #ddd; /* Adiciona uma borda para destacar os blocos */
+    padding: 10px; /* Adiciona algum espaço interno para melhorar a aparência */
+}
